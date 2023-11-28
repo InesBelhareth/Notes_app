@@ -3,7 +3,6 @@ const path = require("path");
 const connectToDatabase = require("./database/dbConfig");
 const noteRoutes = require("./routes/index");
 const errorMiddleware = require("./middlewares/error");
-const cors = require("cors");
 
 const app = express();
 app.use(express.urlencoded({ extended: false }));
